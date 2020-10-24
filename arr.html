@@ -1,0 +1,163 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>array methods</title>
+
+</head>
+
+<body>
+
+    <script>
+    
+
+        var exams = ['group1','Group2','group3','group4'];
+
+        var author = ['shakesphere','kambar','nakkirar'];
+
+        //fill
+
+        // console.log(exams.fill('group',1,2));
+
+    //from
+
+        console.log(Array.from('deepa'));
+
+    //includes
+
+        console.log(exams.includes('upsc'));
+
+
+
+
+    //join
+
+        console.log(author.join(','));
+
+    
+
+    //concat
+
+        console.log(exams.concat(author)); 
+
+    //constructor
+
+        console.log(author.constructor);
+
+    //copywithin
+
+        // console.log(author.copyWithin(1,0));
+
+    //length
+
+        console.log(author.length);
+
+    //pop
+
+        // console.log(author.pop());
+
+
+
+    //push
+
+        // console.log(exams.push('group1'));
+
+    //reduceright
+
+        const values = [2,4,8,6,10]
+
+        const reducer = function getout(fir,sec)
+
+        {
+
+            return fir+''+sec;
+
+        }
+
+        console.log(values.reduceRight(reducer));
+
+    //reverse
+
+        // console.log(author.reverse());
+
+    //shift
+
+        // console.log(author.shift());
+
+    //slice
+
+        console.log(exams.slice(1,3));
+
+    //sort
+
+        // console.log(author.sort());
+
+        const tot = values.sort(function(a,b)
+
+        {
+
+            return a+b;
+
+        })
+
+        console.log(tot);
+
+    //unshift
+
+        // console.log(exams.unshift('deepa'));
+
+        
+
+    //splice
+
+        // author.splice(2,1,'deepa','devi')
+
+        //     console.log(sports);
+
+    //tostring
+
+        console.log(author.toString());
+
+        console.log(exams.valueOf());
+
+         //entries
+
+         let ute = exams.entries();
+
+for (let e of ute )
+
+{
+
+    console.log(e);
+
+}
+let ite1 = exams.keys();
+
+        for (let z of ute )
+
+        {
+
+            console.log(z);
+
+        }
+
+    </script>
+
+    
+
+</body>
+
+</html>
+
+
